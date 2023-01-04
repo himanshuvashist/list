@@ -1,7 +1,7 @@
 import { Text, View } from "react-native";
 
 const Card = ({ heading, desc }) => {
-    return <View style={{ backgroundColor: '#fff', borderRadius: 5, padding: 5, height: 500 }} >
+    return <View style={{ backgroundColor: '#faa', borderRadius: 15, height: 500 }} >
         <View style={{ height: 50 }}>
             <Text>
                 {heading}
