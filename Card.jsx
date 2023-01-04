@@ -1,18 +1,24 @@
 import { Text, View } from "react-native";
 
-const Card = ({ heading, desc }) => {
-    return <View style={{ backgroundColor: '#faa', borderRadius: 15, height: 500 }} >
-        <View style={{ height: 50 }}>
+const Card = ({ heading, subtitle, category }) => (
+    <View >
+    {category ? (
+        <View style={{ height: 200, backgroundColor: 'pink' }}>
+            <Text>
+                {category}
+            </Text>
+        </View>
+    ) : (
+        <View style={{ height: 1000, backgroundColor: 'grey' }}>
             <Text>
                 {heading}
             </Text>
-        </View>
-        <View style={{ height: 100 }}>
             <Text>
-                {desc}
+                {subtitle}
             </Text>
         </View>
+    )}
     </View>
-}
+)
 
 export default Card;
